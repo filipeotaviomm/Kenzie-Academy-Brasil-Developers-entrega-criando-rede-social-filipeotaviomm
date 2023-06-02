@@ -1,0 +1,39 @@
+:root {
+  --background-black: #212529;
+  --background-blue: #4263eb;
+  --background-white: #ffffff;
+  --font-white: #ffffff;
+  --font-grey: #495057;
+  --p-size: 12px;
+  --h3-size: 18px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h1,
+p {
+  text-align: justify;
+  line-height: 140%;
+}
+
+p {
+  font-size: var(--p-size);
+  color: var(--font-grey);
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: 500;
+}
+
+button {
+  font-size: var(--p-size);
+}

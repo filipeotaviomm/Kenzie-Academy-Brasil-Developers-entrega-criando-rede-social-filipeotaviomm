@@ -7,7 +7,13 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyle.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
+    <link rel="stylesheet" href="./src/styles/section.css" />
+    <link rel="stylesheet" href="./src/styles/aside.css" />
+    <link rel="stylesheet" href="./src/styles/modal.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
 
     <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,8 +22,107 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/c05e2a1f1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./src/scripts/users.js" defer></script>
+    <script type="module" src="./src/scripts/posts.js" defer></script>
+    <script type="module" src="./src/scripts/modal.js" defer></script>
 
     <title>Criando rede social</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h2>TechPosters</h2>
+      <p>Sair</p>
+    </header>
+    <div class="container">
+      <div class="container__section-aside">
+        <section>
+          <div class="photo__dados">
+            <img src="./src/assets/img/user1.svg" alt="" />
+            <div class="name__function">
+              <h3>Samuel Leão</h3>
+              <p>Front end Engineer</p>
+            </div>
+          </div>
+          <input type="text" name="" id="" />
+          <textarea name="" id="" cols="10" rows="8"></textarea>
+          <button>Postar</button>
+        </section>
+
+        <aside>
+          <div class="aside__content">
+            <h3>Sugestões para você seguir</h3>
+            <div class="aside__container">
+              <div class="aside__align-row">
+                <div class="aside__align-elements">
+                  <img src="./src/assets/img/user3.svg" alt="" />
+                  <div class="aside__name-function">
+                    <h3>Carlos lima</h3>
+                    <p>UX e UI Designer</p>
+                  </div>
+                </div>
+                <button class="aside__button">Seguir</button>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <main>
+        <h2>Posts</h2>
+        <div class="postContainer">
+          <div class="post">
+            <div class="photo__dados">
+              <img src="./src/assets/img/user2.svg" alt="" />
+              <div class="name__function">
+                <h3>Samuel Persuhn</h3>
+                <p>Front end Engineer</p>
+              </div>
+            </div>
+            <h1>
+              Empresa de Tecnologia da informação abre vagas para programa de
+              estágio
+            </h1>
+            <p>
+              A Generic Digital, empresa natalence especializada em tecnologia
+              da informação, irá iniciar o seu sexto programa de estágio, com o
+              prazo de inscrições entre os dias 10 e 28 de agosto
+            </p>
+            <div class="button-icon">
+              <button data-post-id="1">Abrir Post</button>
+              <i class="fa-solid fa-heart"></i>
+              <p>0</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <dialog class="modal-article__controller">
+      <div class="post">
+        <div class="photo__dados">
+          <div class="align__img-h3-p">
+            <img src="./src/assets/img/user2.svg" alt="" />
+            <div class="name__function">
+              <h3>Samuel Persuhn</h3>
+              <p>Front end Engineer</p>
+            </div>
+          </div>
+          <button>X</button>
+        </div>
+        <h1>
+          Empresa de Tecnologia da informação abre vagas para programa de
+          estágio
+        </h1>
+        <p>
+          A Generic Digital, empresa natalence especializada em tecnologia da
+          informação, irá iniciar o seu sexto programa de estágio, com o prazo
+          de inscrições entre os dias 10 e 28 de agosto
+        </p>
+      </div>
+    </dialog>
+  </body>
 </html>
