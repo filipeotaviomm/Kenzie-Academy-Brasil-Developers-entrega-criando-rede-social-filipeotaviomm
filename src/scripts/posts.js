@@ -64,6 +64,10 @@ function clickHeart() {
         e.target.classList.remove("active");
       } else {
         e.target.classList.add("active");
+        // for (i = 0; i < posts.length; i++) {
+        //   let eachPostLikes = posts[i].likes;
+        //   console.log(eachPostLikes);
+        // }
       }
     });
   }

@@ -1,7 +1,6 @@
 section {
   width: 60%;
   height: 350px;
-  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -50,3 +49,4 @@ section > button {
   max-height: 380px;
   display: flex;
 }
+
